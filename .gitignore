@@ -1,0 +1,25 @@
+# Archivos de caché y compilados de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Entorno Virtual
+venv_app/
+
+# Carpetas de Buildozer
+.buildozer/
+bin/
+.buildozer_api_key
+
+# Archivos del sistema operativo y editores
+.DS_Store
+.vscode/
+*.swp
+*.swo
+
+# Archivos sensibles (aunque no los tengamos aquí, es buena práctica)
+*.env
+secrets.json
+credentials.json
+token.json

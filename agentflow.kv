@@ -1,0 +1,83 @@
+MDBoxLayout:
+    orientation: 'vertical'
+
+    MDTopAppBar:
+        id: top_app_bar
+        title: "Iniciar Sesión"
+        elevation: 4
+
+    MDScreenManager:
+        id: screen_manager
+        LoginScreen:
+        RegisterScreen:
+        DashboardScreen:
+
+<LoginScreen>:
+    name: 'login'
+    MDBoxLayout:
+        orientation: 'vertical'
+        spacing: '20dp'
+        padding: '40dp'
+        Image:
+            source: 'agentflow.png'
+            size_hint_y: None
+            height: '120dp'
+        MDLabel:
+            text: "AgentFlow"
+            font_style: "H4"
+            halign: 'center'
+            bold: True
+        MDTextField:
+            id: email
+            hint_text: "Correo electrónico"
+        MDTextField:
+            id: password
+            hint_text: "Contraseña"
+            password: True
+        MDLabel:
+            id: error_label
+            text: ""
+            theme_text_color: "Error"
+            halign: "center"
+        MDRaisedButton:
+            text: "Entrar"
+            on_release: app.sign_in()
+        MDTextButton:
+            text: "¿No tienes cuenta? Regístrate"
+            on_release: app.go_to_register_screen()
+
+<RegisterScreen>:
+    name: 'register'
+    MDBoxLayout:
+        orientation: 'vertical'
+        padding: '48dp'
+        spacing: '24dp'
+        pos_hint: {'center_y': 0.5}
+        size_hint_y: None
+        height: self.minimum_height
+        MDLabel:
+            text: 'Crear una cuenta'
+            font_style: 'H4'
+            halign: 'center'
+        MDTextField:
+            id: register_email
+            hint_text: "Correo electrónico"
+        MDTextField:
+            id: register_password
+            hint_text: "Contraseña"
+            password: True
+        MDRaisedButton:
+            text: 'REGISTRARSE'
+            pos_hint: {'center_x': 0.5}
+            on_release: app.sign_up()
+        MDTextButton:
+            text: '¿Ya tienes cuenta? Inicia sesión'
+            pos_hint: {'center_x': 0.5}
+            on_release: app.go_to_login_screen()
+
+<DashboardScreen>:
+    name: 'dashboard'
+    MDBoxLayout:
+        MDLabel:
+            text: "¡Bienvenido a AgentFlow!"
+            halign: "center"
