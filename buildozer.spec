@@ -44,7 +44,7 @@ version = 1.0
 
 # [app]
 # ... (otras configuraciones)
-requirements = python3,hostpython3,kivy==2.1.0,kivymd==1.1.1,cython==0.29.32,pillow,plyer,pyjnius,android,requests,pyrebase4,python-jwt,jwcrypto,cryptography,typing-extensions,pycryptodome,openssl,python-dotenv
+requirements = python3,hostpython3,kivy==2.1.0,kivymd==1.1.1,pillow,plyer,pyjnius,android,requests,pyrebase4,python-jwt,jwcrypto,cryptography,typing-extensions,pycryptodome,openssl,python-dotenv
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
