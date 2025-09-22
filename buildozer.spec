@@ -45,8 +45,7 @@ version = 1.0
 # [app]
 # ... (otras configuraciones)
 
-requirements = python3,kivy==2.2.1,kivymd==1.2.0,cython==0.29.32,requests,pillow,pyjnius,android,plyer,pyrebase4,python-jwt,jwcrypto,cryptography,typing-extensions,pycryptodome,openssl,python-dotenv
-
+requirements = python3,kivy==2.2.1,kivymd==1.2.0,cython==0.29.32,requests,pillow,plyer,android,pyjnius
 # ... (otras configuraciones)
 
 # (str) Custom source folders for requirements
@@ -332,7 +331,7 @@ android.allow_backup = True
 #p4a.source_dir =
 
 # (str) The directory in which python-for-android should look for your own build recipes (if any)
-p4a.local_recipes = ./recipes
+#p4a.local_recipes = ./recipes
 
 # (str) Filename to the hook for p4a
 #p4a.hook =
