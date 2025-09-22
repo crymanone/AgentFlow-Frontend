@@ -45,7 +45,7 @@ version = 1.0
 # [app]
 # ... (otras configuraciones)
 
-requirements = python3,kivy==2.2.1,kivymd==1.2.0,cython==0.29.32,requests,pillow,plyer,android,pyjnius
+requirements = python3,kivy==2.2.1,kivymd==1.2.0,cython==0.29.32,requests,pillow,plyer,android,https://github.com/kivy/pyjnius/archive/master.zip
 # ... (otras configuraciones)
 
 # (str) Custom source folders for requirements
